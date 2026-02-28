@@ -1,0 +1,6 @@
+@The_Hirelo_HostAddress = http://localhost:5161
+
+GET {{The_Hirelo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
