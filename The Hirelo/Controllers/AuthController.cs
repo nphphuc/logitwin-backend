@@ -9,6 +9,7 @@ using The_Hirelo.Models;
 using System.Linq;
 using The_Hirelo.DTOs.Requests;
 using The_Hirelo.DTOs.Responses;
+using ChangePasswordRequest = The_Hirelo.DTOs.Requests.ChangePasswordRequest;
 
 namespace The_Hirelo.Controllers;
 
