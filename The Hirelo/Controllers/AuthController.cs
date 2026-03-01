@@ -7,6 +7,8 @@ using Amazon.CognitoIdentityProvider.Model;
 using The_Hirelo.Data;
 using The_Hirelo.Models;
 using System.Linq;
+using The_Hirelo.DTOs.Requests;
+using The_Hirelo.DTOs.Responses;
 
 namespace The_Hirelo.Controllers;
 
@@ -508,73 +510,73 @@ public class AuthController : ControllerBase
     }
 }
 
-// DTOs
+// DTOs for testing purposes
 
-public class RegisterRequest
-{
-    public string Email { get; set; } = null!;
-    public string Password { get; set; } = null!;
-    public string FullName { get; set; } = null!;
-}
+//public class RegisterRequest
+//{
+//    public string Email { get; set; } = null!;
+//    public string Password { get; set; } = null!;
+//    public string FullName { get; set; } = null!;
+//}
 
-public class ConfirmEmailRequest
-{
-    public string Email { get; set; } = null!;
-    public string ConfirmationCode { get; set; } = null!;
-}
+//public class ConfirmEmailRequest
+//{
+//    public string Email { get; set; } = null!;
+//    public string ConfirmationCode { get; set; } = null!;
+//}
 
-public class ResendConfirmationRequest
-{
-    public string Email { get; set; } = null!;
-}
+//public class ResendConfirmationRequest
+//{
+//    public string Email { get; set; } = null!;
+//}
 
-public class LoginRequest
-{
-    public string Email { get; set; } = null!;
-    public string Password { get; set; } = null!;
-}
+//public class LoginRequest
+//{
+//    public string Email { get; set; } = null!;
+//    public string Password { get; set; } = null!;
+//}
 
-public class LoginResponse
-{
-    public string AccessToken { get; set; } = null!;
-    public string IdToken { get; set; } = null!;
-    public string RefreshToken { get; set; } = null!;
-    public int ExpiresIn { get; set; }
-    public string TokenType { get; set; } = null!;
-}
+//public class LoginResponse
+//{
+//    public string AccessToken { get; set; } = null!;
+//    public string IdToken { get; set; } = null!;
+//    public string RefreshToken { get; set; } = null!;
+//    public int ExpiresIn { get; set; }
+//    public string TokenType { get; set; } = null!;
+//}
 
-public class RefreshTokenRequest
-{
-    public string RefreshToken { get; set; } = null!;
-}
+//public class RefreshTokenRequest
+//{
+//    public string RefreshToken { get; set; } = null!;
+//}
 
-public class ForgotPasswordRequestDto
-{
-    public string Email { get; set; } = null!;
-}
+//public class ForgotPasswordRequestDto
+//{
+//    public string Email { get; set; } = null!;
+//}
 
-public class ResetPasswordRequest
-{
-    public string Email { get; set; } = null!;
-    public string ConfirmationCode { get; set; } = null!;
-    public string NewPassword { get; set; } = null!;
-}
+//public class ResetPasswordRequest
+//{
+//    public string Email { get; set; } = null!;
+//    public string ConfirmationCode { get; set; } = null!;
+//    public string NewPassword { get; set; } = null!;
+//}
 
-public class ChangePasswordRequest
-{
-    public string CurrentPassword { get; set; } = null!;
-    public string NewPassword { get; set; } = null!;
-}
+//public class ChangePasswordRequest
+//{
+//    public string CurrentPassword { get; set; } = null!;
+//    public string NewPassword { get; set; } = null!;
+//}
 
-public class UserInfoResponse
-{
-    public Guid Id { get; set; }
-    public string Email { get; set; } = null!;
-    public string Role { get; set; } = null!;
-    public DateTime CreatedAt { get; set; }
-}
+//public class UserInfoResponse
+//{
+//    public Guid Id { get; set; }
+//    public string Email { get; set; } = null!;
+//    public string Role { get; set; } = null!;
+//    public DateTime CreatedAt { get; set; }
+//}
 
-public class UpdateRoleRequest
-{
-    public string Role { get; set; } = null!;
-}
+//public class UpdateRoleRequest
+//{
+//    public string Role { get; set; } = null!;
+//}
