@@ -96,7 +96,8 @@ namespace csharp_service.Controllers
                 var response = await _provider.AdminInitiateAuthAsync(authRequest);
                 return Ok(new LoginResponse
                 {
-                    AccessToken = response.AuthenticationResult.AccessToken
+                    AccessToken = response.AuthenticationResult.AccessToken,
+                    IdToken = response.AuthenticationResult.IdToken
                 });
             }
             catch (Exception ex)

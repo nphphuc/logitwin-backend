@@ -3,6 +3,7 @@
     public class LoginResponse
     {
         public string AccessToken { get; set; } = string.Empty;
+        public string IdToken { get; set; }
     }
 
     public class RegisterResponse
